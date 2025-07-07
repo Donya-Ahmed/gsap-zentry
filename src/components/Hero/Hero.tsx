@@ -3,6 +3,7 @@ import Button from "../Button/Button";
 import { TiLocation } from "react-icons/ti";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { MainContainer } from "../../App";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -147,7 +148,7 @@ export default function Hero() {
           trigger: "#video-frame",
           start: "center 40%",
           end: "bottom center",
-          scroller: ".main-container",
+          scroller: MainContainer,
           scrub: true,
         },
         clipPath: "polygon(14% 0, 72% 0, 87% 97%, 0% 96%)",
@@ -158,7 +159,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative w-screen h-dvh">
+    <section className="bg-blue-50 relative w-screen h-dvh">
       {loading && (
         <div className="absolute inset-0 flex items-center justify-center bg-indigo-800 h-dvh w-screen z-50">
           <img className="w-20 h-20" src="/img/logo.png" alt="Loading" />
@@ -186,6 +187,7 @@ export default function Hero() {
               muted
               loop
               onLoadedData={() => setIsLoaded((prev) => prev + 1)}
+              onError={() => setIsLoaded((prev) => prev + 1)}
             ></video>
           ))}
 
