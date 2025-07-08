@@ -17,7 +17,7 @@ export default function AnimatedTitle({text,className}:{text: string,className?:
     // Remove scroller if not using Locomotive Scroll
     scroller: MainContainer,
     start: "top bottom",
-    toggleActions: "play play play reverse",
+    toggleActions: "play none none reverse",
     scrub: false, // or remove
   }
 }).fromTo(
@@ -30,7 +30,7 @@ export default function AnimatedTitle({text,className}:{text: string,className?:
     opacity: 1,
     transform: 'translate3d(0px,0px,0px) rotateY(0deg) rotateX(0deg)',
     ease: "power2.Out",
-    stagger:0.2
+    stagger:0.1
   }
 )
   })
