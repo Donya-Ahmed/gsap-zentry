@@ -195,7 +195,7 @@ export default function Hero() {
             g<b>a</b>ming
           </h1>
 
-          <div className="absolute left-10 top-5 flex items-start z-40 gap-3 flex-col">
+          <div className="absolute left-10 top-24 lg:top-16 flex items-start z-40 gap-3 flex-col">
             <h2 className="special-font text-6xl sm:text-7xl md:text-9xl lg:text-[12rem] font-[900] text-blue-75 font-zentry">
               REDIFI <b>N</b>
             </h2>

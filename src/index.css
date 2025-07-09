@@ -27,7 +27,7 @@
     src: url("/fonts/zentry-regular.woff2") format("woff2");
   }
 }
-.special-font b{
+.special-font b {
   font-family: "zentry";
   font-feature-settings: "ss01" on;
 }
@@ -35,14 +35,34 @@
   .flex-center {
     @apply flex items-center justify-center;
   }
-  .animated-title{
-   @apply flex flex-col gap-1 text-7xl uppercase leading-[.8] text-white sm:px-32 md:text-[6rem];
+  .animated-title {
+    @apply flex flex-col gap-1 text-7xl uppercase leading-[.8] text-white sm:px-32 md:text-[6rem];
   }
-  .animated-word{
-     @apply special-font font-zentry font-black opacity-0;
+  .animated-word {
+    @apply special-font font-zentry font-black opacity-0;
     transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
     transform-origin: 50% 50% -150px !important;
     will-change: opacity, transform;
   }
-  
+  .grid-2 {
+    @apply relative col-span-2  lg:col-span-2 row-span-1 rounded overflow-hidden  transition-transform duration-300 ease-out;
+  }
+  .grid-title {
+    @apply uppercase md:text-6xl text-4xl font-black font-zentry tracking-wide;
+  }
+  .nav-hover-btn {
+    @apply relative ms-10 font-general text-xs uppercase text-blue-50 after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white cursor-pointer;
+  }
+  .floating-nav {
+    @apply bg-black rounded-lg border;
+  }
+    .story-img-mask {
+    @apply absolute left-0 top-0 size-full overflow-hidden md:left-[20%] md:top-[-10%] md:size-4/5;
+    clip-path: polygon(4% 0, 83% 21%, 100% 73%, 0% 100%);
+  }
+
+  .story-img-content {
+    @apply absolute w-full md:h-dvh h-[50dvh] opacity-100 left-10 top-16 md:left-0 md:top-10 lg:left-[-300px] lg:top-[-100px];
+    transform: translate3d(0, 0, 0) rotateX(0) rotateY(0) rotateZ(0) scale(1);
+  }
 }

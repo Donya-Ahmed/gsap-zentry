@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 export default function VideoCard({
   videoSrc,
@@ -6,13 +6,13 @@ export default function VideoCard({
   description,
 }: {
   videoSrc: string;
-  title: string;
+  title: ReactNode;
   description: string;
 }) {
   const videoRef = React.useRef<HTMLVideoElement>(null);
 
   return (
-    <div className="md:min-h-[55vh] h-96 w-full overflow-hidden relative border border-white/30 rounded">
+    <div className="md:min-h-[55vh] lg:h-full h-96 w-full overflow-hidden relative border border-white/30 rounded">
       <div
         className="absolute size-full"
         onMouseEnter={() => {
@@ -28,11 +28,11 @@ export default function VideoCard({
           src={videoSrc}
         />
       </div>
-      <div className="flex flex-col gap-3">
-        <h3 className="special-font font-zentry md:text-6xl text-black text-4xl">
+      <div className="flex flex-col gap-3 relative z-10 px-5 py-2.5  ">
+        <h3 className="special-font grid-title  text-blue-50 ">
           {title}
         </h3>
-        <p className="font-circular-web md:text-2xl text-lg">{description}</p>
+        <p className="font-circular-web md:text-base text-xs max-w-64 text-blue-50">{description}</p>
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
-// SmoothScrollProvider.tsx (with TypeScript)
-import {
+import React, {
   createContext,
   useRef,
   useLayoutEffect,
@@ -18,7 +17,11 @@ interface LocoContextType {
   progress: number;
 }
 
-export const LocoContext = createContext<LocoContextType | null>(null);
+export const LocoContext = createContext<LocoContextType>({
+  locoScroll: null,
+  isReady: false,
+  progress: 0,
+});
 
 interface Props {
   children: ReactNode;
@@ -27,7 +30,6 @@ interface Props {
 export const SmoothScrollProvider = ({ children }: Props) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const locoScrollInstance = useRef<LocomotiveScroll | null>(null);
-
   const [isReady, setIsReady] = useState(false);
   const [progress, setProgress] = useState(0);
 
