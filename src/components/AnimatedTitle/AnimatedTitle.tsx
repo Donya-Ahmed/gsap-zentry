@@ -39,7 +39,7 @@ export default function AnimatedTitle({text,className}:{text: string,className?:
   return (
     <div ref={titleContainerRef} className={`animated-title ${className}`}>
       {text.split("<br/>").map((part, index) => (
-        <div key={index} className='flex-center max-w-full flex-wrap gap-2 px-10 md:gap-3'>
+        <div key={index} className='flex-center max-w-full flex-wrap gap-2 px-10 md:gap-3 tracking-wide'>
             {part.split(" ").map((word,i)=>(<span className='animated-word' dangerouslySetInnerHTML={{__html:word}} key={i}></span>))}
 
         </div>

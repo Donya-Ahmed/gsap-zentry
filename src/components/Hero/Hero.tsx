@@ -12,7 +12,7 @@ const isTouchDevice = () =>
   "ontouchstart" in window || navigator.maxTouchPoints > 0;
 
 export default function Hero() {
-  const totalVideos = 4;
+  const totalVideos = 3;
   const [currentIndex, setCurrentIndex] = useState(0);
   const nextIndex = (currentIndex + 1) % totalVideos;
 
