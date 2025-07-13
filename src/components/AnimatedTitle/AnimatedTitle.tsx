@@ -18,7 +18,6 @@ export default function AnimatedTitle({text,className}:{text: string,className?:
     scroller: MainContainer,
     start: "top bottom",
     toggleActions: "play none none reverse",
-    scrub: false, // or remove
   }
 }).fromTo(
   titleContainerRef.current.querySelectorAll(".animated-word"),
