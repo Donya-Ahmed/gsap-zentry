@@ -5,6 +5,7 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import Features from "./components/Features/Features";
 import NavBar from "./components/NavBar/NavBar";
 import Story from "./components/Story/Story";
+import PinnedSection from "./components/PinnedSection/PinnedSection";
 export const MainContainer = ".main-container";
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
         <AboutUs />
         <Features />
         <Story/>
-        <div className="h-dvh relative overflow-hidden">
-          help
+        <PinnedSection/>
+        <div className="min-h-dvh w-screen bg-black flex items-center justify-center">
+          hello world
         </div>
       </div>
     </SmoothScrollProvider>
