@@ -1,6 +1,5 @@
 import React from "react";
 import TiltTitle from "../TiltTitle/TiltTitle";
-import RoundedClipPath from "../RoundedClipPath/RoundedClipPath";
 const footerLinks = [
   {
     title: "Explore",
