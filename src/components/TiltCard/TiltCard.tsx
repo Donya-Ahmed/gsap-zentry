@@ -16,8 +16,8 @@ export default function TiltCard({
       elementRef.current.getBoundingClientRect();
     const centerX = (clientX - left) / width;
     const centerY = (clientY - top) / height;
-    const xRotation = (centerX - 0.5) * 15; // Adjust the multiplier for sensitivity
-    const yRotation = (centerY - 0.5) * 15; // Adjust the multiplier for sensitivity
+    const xRotation = (centerX - 0.5) * 40; // Adjust the multiplier for sensitivity
+    const yRotation = (centerY - 0.5) * 40; // Adjust the multiplier for sensitivity
     setTransformValue(
       `perspective(700px) rotateX(${xRotation}deg) rotateY(${yRotation}deg) scale3d(0.95, 0.95, 0.95)`
     );
@@ -28,7 +28,7 @@ export default function TiltCard({
       onMouseLeave={() => setTransformValue("")}
       style={{ transform: transformValue }}
       onMouseMove={handleMouseMove}
-      className={className||"transition-transform duration-300 ease-out"}
+      className={className||"transition-transform duration-600 ease-out"}
     >
       {children}
     </div>

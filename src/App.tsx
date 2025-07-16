@@ -8,6 +8,7 @@ import Story from "./components/Story/Story";
 import PinnedSection from "./components/PinnedSection/PinnedSection";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import LatestUpdatesSection from "./components/LatestUpdatesSection/LatestUpdatesSection";
 export const MainContainer = ".main-container";
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Features />
         <Story/>
         <PinnedSection/>
+        <LatestUpdatesSection/>
         <Contact/>
         <Footer/>
         {/* <div className="min-h-dvh w-screen bg-black flex items-center justify-center">
