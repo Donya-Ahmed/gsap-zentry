@@ -47,7 +47,7 @@ export default function Footer() {
                 {item.links.map((link, linkIndex) => (
                   <li
                     key={linkIndex}
-                    className=" text-xl  text-black/70  "
+                    className=" text-xl  text-black  "
                   >
                     <button className="  clip-path-btn py-3 px-4 rounded-2xl text-black/70 bg-transparent hover:bg-black  hover:text-violet-300  click:bg-black  click:text-violet-300 transition-all duration-500">
                       {" "}

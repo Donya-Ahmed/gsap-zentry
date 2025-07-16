@@ -9,17 +9,19 @@ import PinnedSection from "./components/PinnedSection/PinnedSection";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import LatestUpdatesSection from "./components/LatestUpdatesSection/LatestUpdatesSection";
+import CardGallery from "./components/CardGallery/CardGallery";
 export const MainContainer = ".main-container";
 function App() {
   return (
     <SmoothScrollProvider>
       <NavBar />
-      <div className="main-container overflow-hidden">
+      <div className="main-container overflow-hidden bg-blue-50">
         <Hero />
         <AboutUs />
         <Features />
         <Story/>
         <PinnedSection/>
+        <CardGallery/>
         <LatestUpdatesSection/>
         <Contact/>
         <Footer/>

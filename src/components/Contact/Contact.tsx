@@ -51,7 +51,7 @@ export default function Contact() {
         </div>
 
         {/*  Swordman moved OUTSIDE to escape overflow-hidden */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-60  lg:left-auto  lg:right-28 xl:right-40 lg:top-28 lg:w-64 z-20">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-60  lg:left-auto  lg:right-28 xl:right-20 lg:top-28 lg:w-64 z-20">
           <img
             className="absolute md:scale-125"
             src="/img/swordman-partial.webp"
