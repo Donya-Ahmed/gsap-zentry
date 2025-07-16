@@ -6,6 +6,8 @@ import Features from "./components/Features/Features";
 import NavBar from "./components/NavBar/NavBar";
 import Story from "./components/Story/Story";
 import PinnedSection from "./components/PinnedSection/PinnedSection";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 export const MainContainer = ".main-container";
 function App() {
   return (
@@ -17,9 +19,11 @@ function App() {
         <Features />
         <Story/>
         <PinnedSection/>
-        <div className="min-h-dvh w-screen bg-black flex items-center justify-center">
+        <Contact/>
+        <Footer/>
+        {/* <div className="min-h-dvh w-screen bg-black flex items-center justify-center">
           hello world
-        </div>
+        </div> */}
       </div>
     </SmoothScrollProvider>
   );

@@ -38,7 +38,7 @@
   .animated-title {
     @apply flex flex-col gap-1 text-7xl uppercase leading-[.8] text-white sm:px-32 md:text-[6rem];
   }
-  .aligned-title-left.animated-title div{
+  .aligned-title-left.animated-title div {
     justify-content: flex-start;
   }
   .animated-word {
@@ -84,5 +84,17 @@
     .story-img-mask {
       clip-path: polygon(4% 0, 80% 7%, 97% 59%, 0% 83%);
     }
+  }
+  .contact-clip-path-1 {
+    clip-path: polygon(25% 0%, 74% 0, 69% 64%, 34% 73%);
+  }
+  .contact-clip-path-2 {
+    clip-path: polygon(29% 15%, 85% 30%, 50% 100%, 10% 64%);
+  }
+  .sword-man-clip-path {
+    clip-path: polygon(18% 2%, 79% 29%, 78% 96%, 8% 82%);
+  }
+  .clip-path-btn {
+    clip-path: polygon(0 0, 100% 24%, 100% 100%, 0% 100%);
   }
 }
