@@ -10,6 +10,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import LatestUpdatesSection from "./components/LatestUpdatesSection/LatestUpdatesSection";
 import CardGallery from "./components/CardGallery/CardGallery";
+import WhoWeAre from "./components/WhoWeAre/WhoWeAre";
 export const MainContainer = ".main-container";
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Features />
         <Story/>
         <PinnedSection/>
+        <WhoWeAre/>
         <CardGallery/>
         <LatestUpdatesSection/>
         <Contact/>

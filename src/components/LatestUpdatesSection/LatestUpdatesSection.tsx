@@ -8,21 +8,21 @@ import { MainContainer } from "../../App";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function LatestUpdatesSection() {
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      ScrollTrigger.create({
-        trigger: ".gallery-section",
-        start: "top top",
-        end: "+=600px",
-        pin: ".left-column-content",
-        pinSpacing: false,
-        scroller: MainContainer,
-        // markers: true,
-      });
-    });
+  // useEffect(() => {
+  //   const ctx = gsap.context(() => {
+  //     ScrollTrigger.create({
+  //       trigger: ".gallery-section",
+  //       start: "top top",
+  //       end: "+=600px",
+  //       pin: ".left-column-content",
+  //       pinSpacing: false,
+  //       scroller: MainContainer,
+  //       markers: true,
+  //     });
+  //   });
 
-    return () => ctx.revert();
-  }, []);
+  //   return () => ctx.revert();
+  // }, []);
 
   return (
     <section className="gallery-section bg-blue-50 w-screen overflow-hidden min-h-dvh relative py-20">

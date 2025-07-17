@@ -27,7 +27,7 @@ export default function Footer() {
         maxFont={745}
       />
 
-      <div className="container mx-auto">
+      <div className="container mx-auto px-8 md:px-8">
         <div className="grid  grid-cols-2 md:grid-cols-10   gap-4">
           <div className="col-span-2  ">
             {" "}
