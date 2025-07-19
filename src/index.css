@@ -97,4 +97,14 @@
   .clip-path-btn {
     clip-path: polygon(0 0, 100% 24%, 100% 100%, 0% 100%);
   }
+  @media (min-width: 769px) {
+    .whoweAre span.word{
+      margin-right: 2rem;
+    }
+  }
+   @media (max-width: 800px) {
+    .whoweAre span.word{
+      margin-right: 0.6rem !important;
+    }
+  }
 }

@@ -19,8 +19,8 @@ export default function TiltCard({
     const centerX = (x - left) / width;
     const centerY = (y - top) / height;
 
-    const xRotation = (centerY - 0.5) * -40; // invert Y for natural tilt
-    const yRotation = (centerX - 0.5) * 40;
+    const xRotation = (centerY - 0.5) * -25; // invert Y for natural tilt
+    const yRotation = (centerX - 0.5) * 25;
 
     setTransformValue(
       `perspective(700px) rotateX(${xRotation}deg) rotateY(${yRotation}deg) scale3d(0.95, 0.95, 0.95)`

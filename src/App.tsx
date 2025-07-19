@@ -11,6 +11,7 @@ import Footer from "./components/Footer/Footer";
 import LatestUpdatesSection from "./components/LatestUpdatesSection/LatestUpdatesSection";
 import CardGallery from "./components/CardGallery/CardGallery";
 import WhoWeAre from "./components/WhoWeAre/WhoWeAre";
+import OurBackers from "./components/OurBackers/OurBackers";
 export const MainContainer = ".main-container";
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <PinnedSection/>
         <WhoWeAre/>
         <CardGallery/>
+        <OurBackers/>
         <LatestUpdatesSection/>
         <Contact/>
         <Footer/>

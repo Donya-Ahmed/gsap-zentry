@@ -39,7 +39,7 @@ export default function CardGallery() {
             "<"
           );
         const start = `top+=${calculatedOffset} center`;
-        const animationDuration = 300;
+        const animationDuration = 400;
         const end = `+=${animationDuration}`;
         ScrollTrigger.create({
           trigger: sortedCards[i],
@@ -89,11 +89,11 @@ export default function CardGallery() {
       ScrollTrigger.create({
         trigger: ".gallery-section",
         start: "8% top",
-        end: "+=1000 top",
+        end: "+=700 top",
         scrub: 1.2,
         pin: true,
         pinSpacing: true,
-        // markers: true,
+        markers: true,
         scroller: MainContainer,
         toggleActions: "play none none reverse",
       });
