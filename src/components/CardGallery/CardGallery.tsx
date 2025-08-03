@@ -93,7 +93,7 @@ export default function CardGallery() {
         scrub: 1.2,
         pin: true,
         pinSpacing: true,
-        markers: true,
+        // markers: true,
         scroller: MainContainer,
         toggleActions: "play none none reverse",
       });

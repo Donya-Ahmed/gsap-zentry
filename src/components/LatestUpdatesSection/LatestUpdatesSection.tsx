@@ -16,7 +16,7 @@ export default function LatestUpdatesSection() {
         ScrollTrigger.create({
         trigger: ".latest-update-section",
         start: "top top",
-        end: "+=400px",
+        end: "+=700px",
         pin: ".left-column-content",
         pinSpacing: false,
         scroller: MainContainer,
