@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import  { useEffect, useRef, useState } from "react";
 import Button from "../Button/Button";
 import { TiLocation } from "react-icons/ti";
 import gsap from "gsap";
@@ -20,7 +20,7 @@ export default function Hero() {
   const heroRef = useRef<HTMLDivElement | null>(null);
   const [isLoaded, setIsLoaded] = useState(0);
   const [loading, setLoading] = useState(true);
-  const [pointermove, setPointerMove] = useState(false);
+  const [, setPointerMove] = useState(false);
   const timeout = useRef<ReturnType<typeof setTimeout>>();
 
   const handleNextVideo = () => {
@@ -162,7 +162,7 @@ export default function Hero() {
     <section className="bg-blue-50 relative w-screen h-dvh">
       {loading && (
         <div className="absolute inset-0 flex items-center justify-center bg-indigo-800 h-dvh w-screen z-50">
-          <img className="w-20 h-20" src="/img/logo.png" alt="Loading" />
+          <img className="w-20 h-20" src="img/logo.png" alt="Loading" />
         </div>
       )}
 
@@ -172,7 +172,7 @@ export default function Hero() {
             onClick={handleNextVideo}
             ref={backgroundVideoRef}
             className="cursor-pointer absolute z-40 object-cover w-full h-full"
-            src={`/videos/hero-${nextIndex}.mp4`}
+            src={`${import.meta.env.BASE_URL}videos/hero-${nextIndex}.mp4`}
             autoPlay
             muted
             loop
@@ -182,7 +182,7 @@ export default function Hero() {
               key={index}
               id={`video-${index}`}
               className="absolute z-10 object-cover w-full h-full top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
-              src={`/videos/hero-${index}.mp4`}
+              src={`${import.meta.env.BASE_URL}videos/hero-${index}.mp4`}
               autoPlay
               muted
               loop

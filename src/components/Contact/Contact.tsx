@@ -1,4 +1,3 @@
-import React from "react";
 import AnimatedTitle from "../AnimatedTitle/AnimatedTitle";
 import RoundedClipPath from "../RoundedClipPath/RoundedClipPath";
 import TiltCard from "../TiltCard/TiltCard";
@@ -16,7 +15,7 @@ export default function Contact() {
             <TiltCard>
               <img
                 className="contact-clip-path-1 object-cover"
-                src="/img/contact-1.webp"
+                src={`${import.meta.env.BASE_URL}img/contact-1.webp`}
                 alt="contact-bg"
               />
             </TiltCard>
@@ -28,7 +27,7 @@ export default function Contact() {
             <TiltCard>
               <img
                 className="contact-clip-path-2 object-cover"
-                src="/img/contact-2.webp"
+                src={`${import.meta.env.BASE_URL}img/contact-2.webp`}
                 alt="contact-bg"
               />
             </TiltCard>
@@ -54,13 +53,13 @@ export default function Contact() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-60  lg:left-auto  lg:right-28 xl:right-20 lg:top-28 lg:w-64 z-20">
           <img
             className="absolute md:scale-125"
-            src="/img/swordman-partial.webp"
+            src={`${import.meta.env.BASE_URL}img/swordman-partial.webp`}
           />
           <div className="rounded-clip">
             <TiltCard>
               <img
                 className="sword-man-clip-path md:scale-125"
-                src="/img/swordman.webp"
+                src={`${import.meta.env.BASE_URL}img/swordman.webp`}
               />
             </TiltCard>
             <RoundedClipPath />

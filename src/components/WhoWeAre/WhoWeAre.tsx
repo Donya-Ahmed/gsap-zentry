@@ -1,4 +1,3 @@
-import React from "react";
 import HoveredBox from "../HoveredBox/HoveredBox";
 import Button from "../Button/Button";
 
@@ -17,7 +16,7 @@ export default function WhoWeAre() {
         </span>
         <span className="flex items-center justify-center">
           <span className="word">a new</span>
-          <HoveredBox img={"/img/gallery-2.webp"} />
+          <HoveredBox img={`${import.meta.env.BASE_URL}img/gallery-2.webp`} />
           <span className="word">reality</span>
         </span>
         <span className="flex items-center justify-center">
@@ -30,7 +29,7 @@ export default function WhoWeAre() {
           <span className="word">
             play<b>e</b>rs
           </span>
-          <HoveredBox img={"/img/gallery-4.webp"} />
+          <HoveredBox img={`${import.meta.env.BASE_URL}/img/gallery-4.webp`} />
           <span className="word">and</span>
         </span>
         <span className="flex items-center justify-center">
@@ -47,7 +46,7 @@ export default function WhoWeAre() {
         </span>
         <span className="flex items-center justify-center">
           <span className="word">to</span>
-          <HoveredBox img={"/img/gallery-5.webp"} />
+          <HoveredBox img={`${import.meta.env.BASE_URL}/img/gallery-5.webp`} />
           <span className="word">thrive</span>
         </span>
       </div>

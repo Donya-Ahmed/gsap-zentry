@@ -46,7 +46,7 @@ export default function NavBar() {
     >
       <nav className="flex items-center justify-between px-4 size-full py-5">
         <div className="flex items-center gap-3">
-          <img className="w-10" src="/img/logo.png" alt="logo" />
+          <img className="w-10" src={`${import.meta.env.BASE_URL}img/logo.png`} alt="logo" />
           <Button
             text={"Products"}
             className={"!bg-black"}

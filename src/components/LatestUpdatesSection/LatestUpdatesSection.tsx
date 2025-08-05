@@ -1,5 +1,5 @@
 
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import AnimatedTitle from "../AnimatedTitle/AnimatedTitle";
 import Button from "../Button/Button";
 import TiltCard from "../TiltCard/TiltCard";
@@ -59,7 +59,7 @@ export default function LatestUpdatesSection() {
             <TiltCard>
               <img
                 className="rounded-xl border-black border-2 w-full h-full object-cover"
-                src="/img/gallery-2.webp"
+                src={`${import.meta.env.BASE_URL}img/gallery-2.webp`}
                 alt="Latest Updates"
               />
             </TiltCard>
@@ -74,7 +74,7 @@ export default function LatestUpdatesSection() {
             <TiltCard>
               <img
                 className="rounded-xl border-black border-2 w-full h-full object-cover"
-                src="/img/gallery-3.webp"
+                src={`${import.meta.env.BASE_URL}img/gallery-3.webp`}
                 alt="Latest Updates"
               />
             </TiltCard>

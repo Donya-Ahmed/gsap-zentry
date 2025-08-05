@@ -1,4 +1,3 @@
-import React from "react";
 
 export default function PaginationItem({num, title, description}: {num: string, title: string, description: string}) {
   return (

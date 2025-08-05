@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import AnimatedTitle from "../AnimatedTitle/AnimatedTitle";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -72,7 +72,7 @@ export default function AboutUs() {
             <div className="mask-clip-about  mt-5  overflow-hidden  absolute left-1/2 -translate-x-1/2 z-50">
               <img
                 className="absolute inset-0 size-full  object-cover"
-                src="/img/about.webp"
+                src={`${import.meta.env.BASE_URL}img/about.webp`}
                 alt="About Us"
               />
             </div>

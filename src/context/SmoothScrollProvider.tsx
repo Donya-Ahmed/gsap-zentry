@@ -1,4 +1,4 @@
-import React, {
+import {
   createContext,
   useRef,
   useLayoutEffect,
@@ -34,7 +34,8 @@ export const SmoothScrollProvider = ({ children }: Props) => {
   const [progress, setProgress] = useState(0);
 
   useLayoutEffect(() => {
-    const scrollElement = document.querySelector<HTMLElement>(".main-container");
+    const scrollElement =
+      document.querySelector<HTMLElement>(".main-container");
     if (!scrollElement) {
       console.error("❌ .main-container not found");
       return;
@@ -58,7 +59,9 @@ export const SmoothScrollProvider = ({ children }: Props) => {
       scrollTop(value) {
         return arguments.length
           ? loco.scrollTo(value!, { duration: 0, disableLerp: true })
-          : loco.scroll.instance.scroll.y;
+          : // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-expect-error
+            loco.scroll.instance.scroll.y;
       },
       getBoundingClientRect() {
         return {
@@ -70,7 +73,8 @@ export const SmoothScrollProvider = ({ children }: Props) => {
       },
       pinType: scrollElement.style.transform ? "transform" : "fixed",
     });
-
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
     ScrollTrigger.addEventListener("refresh", () => loco.update());
     ScrollTrigger.refresh();
 
@@ -78,6 +82,8 @@ export const SmoothScrollProvider = ({ children }: Props) => {
 
     return () => {
       loco.destroy();
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-expect-error
       ScrollTrigger.removeEventListener("refresh", () => loco.update());
     };
   }, []);

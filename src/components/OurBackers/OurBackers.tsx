@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import OurBackersItem from "../OurBackersItem/OurBackersItem";
 import { MainContainer } from "../../App";
 import gsap from "gsap";

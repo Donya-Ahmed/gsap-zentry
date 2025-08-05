@@ -143,7 +143,7 @@ export default function PinnedSection() {
           <video
             ref={pinnedVideoRef}
             className=" object-cover w-full h-full"
-            src={`/videos/v2.webm`}
+            src={`${import.meta.env.BASE_URL}videos/v2.webm`}
             autoPlay
             muted
             loop

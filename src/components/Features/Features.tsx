@@ -1,4 +1,4 @@
-import React from "react";
+
 import VideoCard from "../VideoCard/VideoCard";
 import { TiLocationArrow } from "react-icons/ti";
 import TiltCard from "../TiltCard/TiltCard";
@@ -15,7 +15,7 @@ export default function Features() {
           </p>
         </div>
         <VideoCard
-          videoSrc="/videos/feature-1.mp4"
+          videoSrc={`${import.meta.env.BASE_URL}videos/feature-1.mp4`}
           title={
             <>
               Radia<b>n</b>t
@@ -26,7 +26,7 @@ export default function Features() {
         <div className="grid grid-cols-4 grid-rows-3  gap-5 mt-10">
           <TiltCard className="me-32 md:me-0 col-span-full md:col-span-2 md:row-span-2">
             <VideoCard
-              videoSrc="/videos/feature-2.mp4"
+              videoSrc={`${import.meta.env.BASE_URL}videos/feature-2.mp4`}
               title={
                 <>
                   Zig<b>m</b>a
@@ -37,7 +37,7 @@ export default function Features() {
           </TiltCard>
           <TiltCard className="ms-32 md:ms-0 col-span-full md:col-span-2 row-span-1">
             <VideoCard
-              videoSrc="/videos/feature-3.mp4"
+              videoSrc={`${import.meta.env.BASE_URL}videos/feature-3.mp4`}
               title={
                 <>
                   N<b>e</b>xus
@@ -48,7 +48,7 @@ export default function Features() {
           </TiltCard>
           <TiltCard className="me-32 md:me-0 col-span-full md:col-span-2 row-span-1">
             <VideoCard
-              videoSrc="/videos/feature-4.mp4"
+              videoSrc={`${import.meta.env.BASE_URL}videos/feature-4.mp4`}
               title={
                 <>
                   Az<b>u</b>l
@@ -69,7 +69,7 @@ export default function Features() {
             <div className="flex size-full flex-col justify-between">
               <video
                 className="size-full object-center object-cover"
-                src="/videos/feature-5.mp4"
+                src={`${import.meta.env.BASE_URL}videos/feature-5.mp4`}
                 loop
                 muted
                 autoPlay

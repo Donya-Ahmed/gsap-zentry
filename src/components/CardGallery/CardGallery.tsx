@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import AnimatedTitle from "../AnimatedTitle/AnimatedTitle";
 import TiltTitle from "../TiltTitle/TiltTitle";
 import { MainContainer } from "../../App";
@@ -119,7 +119,7 @@ export default function CardGallery() {
               muted
               loop
               className=" w-full h-full object-cover relative left-[50%] -translate-x-1/2"
-              src="/videos/card-1@lg.webm"
+              src={`${import.meta.env.BASE_URL}videos/card-1@lg.webm`}
             />
           </div>
           <div className="gallery-card card-2 rounded-xl bg-[#EDFF66] w-[22rem]  ml-auto relative mb-10 h-80 flex flex-col justify-between ">
@@ -137,7 +137,7 @@ export default function CardGallery() {
               <h4 className="text-black text-[10px] font-general">Treasury</h4>
               <h3 className="font-zentry text-7xl text-black">140M+</h3>
             </div>
-            <video autoPlay muted loop src="/videos/card-5@lg.webm" />
+            <video autoPlay muted loop src={`${import.meta.env.BASE_URL}videos/card-5@lg.webm`} />
             <div className="grid grid-cols-6 absolute bottom-10 w-full  z-20">
               <div className="col-span-2 flex items-center justify-center gap-3">
                 <div className="rounded-full bg-black w-5 h-5 "></div>
@@ -178,7 +178,7 @@ export default function CardGallery() {
             </div>
             <img
               className=" relative left-[50%] -translate-x-1/2"
-              src="/img/gallery-1.webp"
+              src={`${import.meta.env.BASE_URL}img/gallery-1.webp`}
             />
           </div>
           <div className="gallery-card card-3 rounded-xl border-[#dedef259] border-[0.5px] w-[22rem]  mr-auto relative mb-10 h-96 flex flex-col justify-between p-4">

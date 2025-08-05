@@ -90,7 +90,7 @@ export default function Story() {
         <div className="rounded-clip h-[70vh] md:h-dvh">
           <div className="story-img-mask">
             <div className="story-img-content">
-              <img ref={imgFrame} src="/img/entrance.webp" alt="entrance" />
+              <img ref={imgFrame} src={`${import.meta.env.BASE_URL}img/entrance.webp`} alt="entrance" />
             </div>
           </div>
         </div>

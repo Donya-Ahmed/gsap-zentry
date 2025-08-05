@@ -1,4 +1,3 @@
-import React from "react";
 import TiltTitle from "../TiltTitle/TiltTitle";
 const footerLinks = [
   {
@@ -32,11 +31,11 @@ export default function Footer() {
           <div className="col-span-2  ">
             {" "}
             <img
-              src="/img/play.svg"
+              src={`${import.meta.env.BASE_URL}img/play.svg`}
               className="translate-x-[1px] translate-y-[3px] w-[50px]"
             />{" "}
             <img
-              src="/img/play.svg"
+              src={`${import.meta.env.BASE_URL}img/play.svg`}
               className="translate-x-[1px] -translate-y-4 rotate-180 w-[50px]"
             />
           </div>
